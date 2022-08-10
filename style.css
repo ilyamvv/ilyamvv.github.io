@@ -152,7 +152,7 @@ a {
    font-weight: 500;
 }
 
-.contacts a {
+.contacts a:hover {
    color: rgb(16, 23, 227);
 }
 
