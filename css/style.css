@@ -372,6 +372,7 @@
    .info__sidebar {
       display: none;
    }
+   
    .logo,
    .header__title{
       text-align: center;
@@ -379,7 +380,8 @@
    .header__offer-content{
       padding: 0;
    }
-   .header__offer{
+   .header__offer,
+   .header__update{
       justify-content: center;
    }
    .message button {
