@@ -63,6 +63,18 @@
    font-size: 48px;
 }
 
+.header__update {
+   font-weight: 700;
+   font-size: 16px;
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.header__update img {
+   padding-right: 10px;
+}
+
 .header__offer-content {
    padding-right: 80px;
 }
@@ -360,7 +372,16 @@
    .info__sidebar {
       display: none;
    }
-
+   .logo,
+   .header__title{
+      text-align: center;
+   }
+   .header__offer-content{
+      padding: 0;
+   }
+   .header__offer{
+      justify-content: center;
+   }
    .message button {
       margin: 0 auto;
    }
@@ -442,7 +463,8 @@
       text-align: center;
       padding: 10px 4px;
    }
-   .footer__links a{
+
+   .footer__links a {
       display: block;
       text-align: center;
       margin: 20px 0;
