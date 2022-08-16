@@ -1,0 +1,29 @@
+.offer {
+   margin-bottom: 100px;
+}
+
+.offer__title {
+   border: 1px solid var(--primary__text);
+   padding: 83px 0 60px;
+   background: url(../../img/draws/1.svg)no-repeat center bottom/contain;
+}
+
+.offer__title::before,
+.offer__title::after {
+   display: none;
+}
+
+.offer__text {
+   padding: 55px 0;
+   border: 1px solid var(--primary__text);
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+}
+
+.offer__text p {
+   max-width: 715px;
+   margin: 0 auto;
+}

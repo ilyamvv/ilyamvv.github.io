@@ -1,0 +1,30 @@
+.down__form {
+   padding: 60px 0;
+   background: var(--secondary__color);
+}
+
+.down__form .main__form {
+   padding: 0 180px;
+}
+
+.down__form-item:first-child {
+   display: grid;
+   grid-template-columns: 0.87fr 0.5fr 0.5fr;
+   grid-column-gap: 20px;
+}
+
+.down__form-item:last-child {
+   display: grid;
+   grid-template-columns: 1fr 0.75fr 0.25fr;
+   grid-column-gap: 20px;
+}
+
+.down__form .custom__form-date label {
+   width: 100%;
+}
+
+.down__form .main__form-btn {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 25px;
+}
