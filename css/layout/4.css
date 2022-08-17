@@ -8,8 +8,11 @@
    grid-gap: 50px 22px;
    margin-bottom: 45px;
 }
-
+.leisure__wrap-item{
+   width: 100%;
+}
 .leisure__wrap-item img {
+   width: 100%;
    margin-bottom: 30px;
    border-radius: 8px;
    -webkit-border-radius: 8px;

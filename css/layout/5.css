@@ -20,7 +20,9 @@
 .gallery__wrap-item:last-child {
    grid-template-columns: 1.75fr 2.25fr 1fr;
 }
-
+.gallery__wrap-item:nth-child(2){
+   display: none;
+}
 .gallery__item-img {
    width: 100%;
    height: 400px;

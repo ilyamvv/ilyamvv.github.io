@@ -1,6 +1,6 @@
 $(document).ready(function () {
    // menu
-   $('.menu__btn').on('click',function(){
+   $('.menu__btn').on('click', function () {
       $(this).toggleClass('menu__btn-active');
       $('.phone__nav').toggleClass('phone__nav-active');
    });
@@ -134,7 +134,7 @@ $(document).ready(function () {
    // swiper slider
    var swiper = new Swiper('.swiper', {
       loop: true,
-      allowTouchMove: false,
+      allowTouchMove: true,
       slidesPerView: 1,
       spaceBetween: 10,
       effect: "fade",
@@ -145,6 +145,11 @@ $(document).ready(function () {
       navigation: {
          nextEl: '.slider__button-next',
          prevEl: '.slider__button-prev',
+      },
+      breakpoints: {
+         1024: {
+            allowTouchMove: false,
+         },
       },
    });
 });

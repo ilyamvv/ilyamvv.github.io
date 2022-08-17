@@ -15,6 +15,12 @@
    color: var(--primary__text);
 }
 
+@media (max-width:768px) {
+   .text {
+      font-size: 12px;
+   }
+}
+
 .title {
    font-family: "YesevaOne";
    font-weight: 900;
@@ -78,7 +84,7 @@ h3::before,
 h3::after {
    content: '';
    display: block;
-   width: 50vw;
+   width: 1500px;
    height: 1px;
    position: absolute;
    background: var(--primary__text);
@@ -86,17 +92,55 @@ h3::after {
 }
 
 h3::before {
-   left: -45%;
+   left: -90%;
 }
 
 h3::after {
-   right: -45%;
+   right: -90%;
+}
+
+@media (max-width:1260px) {
+   h3::before {
+      left: -65%;
+      width: 1000px;
+   }
+
+   h3::after {
+      width: 1000px;
+      right: -65%;
+   }
+}
+
+@media (max-width:1070px) {
+   h3::before {
+      width: 20vw;
+      left: -20px;
+   }
+
+   h3::after {
+      width: 20vw;
+      right: -20px;
+   }
+}
+
+@media (max-width:768px) {
+   h3 {
+      font-size: 20px;
+      line-height: 23px;
+   }
 }
 
 h4 {
    font-size: 36px;
    color: var(--base__text);
    line-height: 42px;
+}
+
+@media (max-width:768px) {
+   h4 {
+      font-size: 20px;
+      line-height: 25px;
+   }
 }
 
 .menu .current {
@@ -169,4 +213,30 @@ h4 {
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-left: 1px solid #12403c38;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: var(--secondary__color);
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #244E4A;
 }
