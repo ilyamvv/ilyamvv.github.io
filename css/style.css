@@ -10,6 +10,7 @@ body {
    font-weight: 400;
    overflow-x: hidden;
    position: relative;
+   width: 100vw;
 }
 
 .menu__btn,
@@ -262,42 +263,51 @@ body {
    .down__form .main__form {
       padding: 0;
    }
-   .footer .container{
+
+   .footer .container {
       flex-direction: column;
    }
-   .footer__item{
+
+   .footer__item {
       padding: 10px 0 10px 20px;
       margin: 0 0 35px 0;
    }
-   .footer__root{
+
+   .footer__root {
       position: relative;
       text-align: center;
       padding: 20px 0 0;
       right: 0;
    }
-   #empty__span2{
+
+   #empty__span2 {
       display: none;
    }
-   .footer__social{
+
+   .footer__social {
       top: 47%;
    }
-   .footer__social-wrap{
+
+   .footer__social-wrap {
       display: flex;
       flex-direction: column;
       align-items: end;
    }
-   .footer__social-wrap a{
+
+   .footer__social-wrap a {
       margin: 0 0 20px 0;
    }
-   .footer__item li{
+
+   .footer__item li {
       max-width: 100%;
    }
 }
 
 @media(max-width:768px) {
-   .swiper{
+   .swiper {
       height: 260px;
    }
+
    .phone__nav {
       width: 100%;
    }
@@ -400,7 +410,8 @@ body {
    #empty__span1 {
       display: none;
    }
-   .down__form .main__form-btn{
+
+   .down__form .main__form-btn {
       flex-direction: row;
       margin-bottom: 0;
    }
