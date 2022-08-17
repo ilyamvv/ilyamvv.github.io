@@ -10,7 +10,6 @@ body {
    font-weight: 400;
    overflow-x: hidden;
    position: relative;
-   width: 100vw;
 }
 
 .menu__btn,
@@ -99,25 +98,20 @@ body {
       margin: 0;
    }
 
-   .main__screen {
-      overflow-x: hidden;
-   }
 
    .phone__nav {
-      display: block;
       position: absolute;
       top: 68px;
-      right: -100%;
+      right: 0;
       background: var(--base__color);
       z-index: 2;
       width: 450px;
       height: 100vh;
       padding: 25px 15px 0 15px;
-
    }
 
    .phone__nav-active {
-      right: 0;
+      display: block;
    }
 
    .phone__nav-item {
@@ -288,7 +282,7 @@ body {
       display: none;
    }
 
-   .footer__social {
+   .footer__social-phone {
       top: 47%;
    }
 
