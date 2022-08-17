@@ -214,24 +214,3 @@ h4 {
    justify-content: space-between;
    align-items: center;
 }
-
-::-webkit-scrollbar {
-   width: 10px;
-}
-
-::-webkit-scrollbar-track {
-   border-radius: 10px;
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   -ms-border-radius: 10px;
-   -o-border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-   background: var(--secondary__color);
-   border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-   background: #244E4A;
-}
