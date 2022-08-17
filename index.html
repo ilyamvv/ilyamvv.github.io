@@ -11,19 +11,51 @@
 
 <body>
 
+   <nav class="phone__nav tre">
+      <div class="phone__nav-item">
+         <h5 class="phone__nav-title title">Меню</h5>
+         <ul class="menu">
+            <li><a class="tre text current" href="/">Главная</a></li>
+            <li><a class="tre text" href="#">Номерной фонд</a></li>
+            <li><a class="tre text" href="#">Досуг и развлечения</a></li>
+            <li><a class="tre text" href="#">Галерея</a></li>
+            <li><a class="tre text" href="#">Контакты</a></li>
+         </ul>
+      </div>
+      <div class="phone__nav-item">
+         <h5 class="phone__nav-title title">Контакты</h5>
+         <ul class="header__nav-contacts">
+            <li>Бронирования: <a href="tel:+78003330319">8 (800) 333-03-19</a></li>
+            <li>Телефон отеля: <a href="tel:+78003330319">8 (800) 123-45-67</a></li>
+            <li>E-mail: <a href="mailto:grandhotel@mail.ru">grandhotel@mail.ru</a></li>
+            <li>Адрес: <a href="#">Невский проспект, Михайловская улица, 1/7, Санкт-Петербург, Россия, 191186</a>
+            </li>
+            <li><a class="header__nav-active" href="#">Правила и условия бронирования</a></li>
+         </ul>
+      </div>
+      <div class="footer__social">
+         <p class="text">Мы в мессенджерах<br>и соцсетях</p>
+         <div class="footer__social-wrap">
+            <a href="#"><img src="img/social/wa.svg" alt="WatsApp"></a>
+            <a href="#"><img src="img/social/te.svg" alt="Telegram"></a>
+            <a href="#"><img src="img/social/in.svg" alt="Instagram"></a>
+         </div>
+      </div>
+   </nav>
+
    <header class="header">
       <div class="container">
          <a href="/" class="logo"><img src="img/logo.svg" alt="Grand Hotel Europe"></a>
-         <nav class="nav">
+         <nav class="nav desktop__nav">
             <ul class="menu">
-               <li><a class="tre text current" href="#">Главная</a></li>
+               <li><a class="tre text current" href="/">Главная</a></li>
                <li><a class="tre text" href="#">Номерной фонд</a></li>
                <li><a class="tre text" href="#">Досуг и развлечения</a></li>
                <li><a class="tre text" href="#">Галерея</a></li>
                <li><a class="tre text" href="#">Контакты</a></li>
             </ul>
          </nav>
-         <div class="header__contacts">
+         <div class="header__contacts desktop__nav">
             <a href="tel:88003330319" class="header__phone text">8 (800) 333-03-19</a>
             <div class="header__contacts-icons">
                <a href="#"><img src="img/social/wa.svg" alt="WatsApp"></a>
@@ -31,8 +63,14 @@
                <a href="#"><img src="img/social/in.svg" alt="Instagram"></a>
             </div>
          </div>
+         <button class="menu__btn tre">
+            <span id="menu__btn-line1" class="menu__btn-line tre"></span>
+            <span id="menu__btn-line2" class="menu__btn-line tre"></span>
+            <span id="menu__btn-line3" class="menu__btn-line tre"></span>
+         </button>
       </div>
    </header>
+
 
    <div class="main__screen">
       <div class="container">

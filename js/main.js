@@ -1,4 +1,10 @@
 $(document).ready(function () {
+   // menu
+   $('.menu__btn').on('click',function(){
+      $(this).toggleClass('menu__btn-active');
+      $('.phone__nav').toggleClass('phone__nav-active');
+   });
+
    var x, i, j, l, ll, selElmnt, a, b, c;
    /*look for any elements with the class "custom-select":*/
    x = document.getElementsByClassName("custom__select");
