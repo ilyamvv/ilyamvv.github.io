@@ -90,6 +90,8 @@ $(document).ready(function () {
    let dpMin, dpMax;
 
    dpMin = new AirDatepicker('#el1', {
+      isMobile: true,
+      autoClose: true,
       onSelect({
          date
       }) {
@@ -100,6 +102,8 @@ $(document).ready(function () {
    })
 
    dpMax = new AirDatepicker('#el2', {
+      isMobile: true,
+      autoClose: true,
       onSelect({
          date
       }) {
@@ -112,6 +116,8 @@ $(document).ready(function () {
    let dpMin1, dpMax1;
 
    dpMin1 = new AirDatepicker('#el3', {
+      isMobile: true,
+      autoClose: true,
       onSelect({
          date
       }) {
@@ -122,6 +128,8 @@ $(document).ready(function () {
    })
 
    dpMax2 = new AirDatepicker('#el4', {
+      isMobile: true,
+      autoClose: true,
       onSelect({
          date
       }) {

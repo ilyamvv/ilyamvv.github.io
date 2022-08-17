@@ -99,6 +99,10 @@ body {
       margin: 0;
    }
 
+   .main__screen {
+      overflow-x: hidden;
+   }
+
    .phone__nav {
       display: block;
       position: absolute;
