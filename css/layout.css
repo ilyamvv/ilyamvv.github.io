@@ -114,12 +114,12 @@ h3::after {
 @media (max-width:1070px) {
    h3::before {
       width: 20vw;
-      left: -20px;
+      left: -15px;
    }
 
    h3::after {
       width: 20vw;
-      right: -20px;
+      right: -15px;
    }
 }
 
