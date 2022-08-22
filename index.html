@@ -1,526 +1,447 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>A Belmond hotel st. Petersburg</title>
+   <title>Green Hill Tivat</title>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/intlTelInput.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-   <nav class="phone__nav tre">
-      <div class="phone__nav-item">
-         <h5 class="phone__nav-title title">Меню</h5>
-         <ul class="menu">
-            <li><a class="tre text current" href="/">Главная</a></li>
-            <li><a class="tre text" href="#">Номерной фонд</a></li>
-            <li><a class="tre text" href="#">Досуг и развлечения</a></li>
-            <li><a class="tre text" href="#">Галерея</a></li>
-            <li><a class="tre text" href="#">Контакты</a></li>
-         </ul>
-      </div>
-      <div class="phone__nav-item">
-         <h5 class="phone__nav-title title">Контакты</h5>
-         <ul class="header__nav-contacts">
-            <li>Бронирования: <a href="tel:+78003330319">8 (800) 333-03-19</a></li>
-            <li>Телефон отеля: <a href="tel:+78003330319">8 (800) 123-45-67</a></li>
-            <li>E-mail: <a href="mailto:grandhotel@mail.ru">grandhotel@mail.ru</a></li>
-            <li>Адрес: <a href="#">Невский проспект, Михайловская улица, 1/7, Санкт-Петербург, Россия, 191186</a>
-            </li>
-            <li><a class="header__nav-active" href="#">Правила и условия бронирования</a></li>
-         </ul>
-      </div>
-      <div class="footer__social">
-         <p class="text">Мы в мессенджерах<br>и соцсетях</p>
-         <div class="footer__social-wrap">
-            <a href="#"><img src="img/social/wa.svg" alt="WatsApp"></a>
-            <a href="#"><img src="img/social/te.svg" alt="Telegram"></a>
-            <a href="#"><img src="img/social/in.svg" alt="Instagram"></a>
-         </div>
-      </div>
-   </nav>
 
    <header class="header">
-      <div class="container">
-         <a href="/" class="logo"><img src="img/logo.svg" alt="Grand Hotel Europe"></a>
-         <nav class="nav desktop__nav">
+      <div class="mobile__nav">
+         <div class="container">
+            <button class="menu__btn">
+               <span></span>
+            </button>
+         </div>
+         <nav class="nav__menu nav__mobile">
+            <a href="/" class="logo"><img src="img/logo.png" alt="Green Hill Tivat"></a>
             <ul class="menu">
-               <li><a class="tre text current" href="/">Главная</a></li>
-               <li><a class="tre text" href="#">Номерной фонд</a></li>
-               <li><a class="tre text" href="#">Досуг и развлечения</a></li>
-               <li><a class="tre text" href="#">Галерея</a></li>
-               <li><a class="tre text" href="#">Контакты</a></li>
+               <li class="menu__item"><a href="#about">О поселке</a></li>
+               <li class="menu__item"><a href="#houses">Дома</a></li>
+               <li class="menu__item"><a href="#location">Расположение</a></li>
+               <li class="menu__item"><a href="#contacts">Контакты</a></li>
             </ul>
          </nav>
-         <div class="header__contacts desktop__nav">
-            <a href="tel:88003330319" class="header__phone text">8 (800) 333-03-19</a>
-            <div class="header__contacts-icons">
-               <a href="#"><img src="img/social/wa.svg" alt="WatsApp"></a>
-               <a href="#"><img src="img/social/te.svg" alt="Telegram"></a>
-               <a href="#"><img src="img/social/in.svg" alt="Instagram"></a>
-            </div>
-         </div>
-         <button class="menu__btn tre">
-            <span id="menu__btn-line1" class="menu__btn-line tre"></span>
-            <span id="menu__btn-line2" class="menu__btn-line tre"></span>
-            <span id="menu__btn-line3" class="menu__btn-line tre"></span>
-         </button>
       </div>
-   </header>
-
-
-   <div class="main__screen">
       <div class="container">
-         <div class="main__screen-content">
-            <h1 class="title main__title">A Belmond hotel<br>st. Petersburg</h1>
-            <form class="main__form">
-               <div class="main__form-item">
-                  <span class="form__item-title text">Номер</span>
-                  <label for="room" class="form__label">
-                     <div class="custom__select custom__field">
-                        <select class="form__field" name="room">
-                           <option>Выберите номер:</option>
-                           <option value="1">Двухместный номер с 1-й кроватью</option>
-                           <option value="21">Двухместный номер с 2-й кроватью</option>
-                        </select>
-                     </div>
-                  </label>
-               </div>
-               <div class="main__form-item">
-                  <span class="form__item-title text">Даты пребывания</span>
-                  <div class="custom__form-item custom__form-date">
-                     <label for="" class="form__label text">
-                        <input class="form__field date__field" type="text" name="Заезд" id="el1"
-                           placeholder="Дата заезда" required maxlength="0" autocomplete="off">
-                     </label>
-                     <label for="" class="form__label text">
-                        <input class="form__field date__field" type="text" name="Выезд" id="el2"
-                           placeholder="Дата выезда" required maxlength="0" autocomplete="off">
-                     </label>
-                  </div>
-               </div>
-               <div class="main__form-item">
-                  <div class="custom__form-item custom__field custom__form-contacts">
-                     <div class="">
-                        <span class="form__item-title text">Ваше имя</span>
-                        <label for="" class="form__label text">
-                           <input class="form__field" type="text" name="Имя" required autocomplete="off">
-                        </label>
-                     </div>
-                     <div class="">
-                        <span class="form__item-title text">Контактный телефон</span>
-                        <label for="" class="form__label text">
-                           <input class="form__field" type="tel" name="Телефон" minlength="6" max="20" required
-                              autocomplete="off" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
-                        </label>
-                     </div>
-                  </div>
-               </div>
-               <div class="main__form-item main__form-btn">
-                  <button type="submit" class="btn tre">Забронировать</button>
-               </div>
-            </form>
-         </div>
-         <div class="main__screen-img">
+         <nav class="nav__menu pc-menu">
+            <a href="/" class="logo"><img src="img/logo.png" alt="Green Hill Tivat"></a>
+            <ul class="menu">
+               <li class="menu__item"><a href="#about">О поселке</a></li>
+               <li class="menu__item"><a href="#houses">Дома</a></li>
+               <li class="menu__item"><a href="#location">Расположение</a></li>
+               <li class="menu__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <a style="opacity: 0;pointer-events:none;" href="#" class="header__phone"><img src="img/social/tel.svg"
+                  alt="whatsapp"></a>
+         </nav>
+         <h1 class="main__title">Green hill Tivat</h1>
+         <p class="main__subtitle">Residential Complex</p>
+      </div>
+      <a href="#about" class="arrow__link">
+         <svg role="presentation" class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px"
+            height="18.592px" viewBox="0 0 38.417 18.592">
+            <g>
+               <path
+                  d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z">
+               </path>
+            </g>
+         </svg>
+      </a>
+   </header>
+   <!-- /.header -->
+
+   <div id="about" class="about__section">
+      <div class="container">
+         <h3 class="about__title">О поселке GREEN HILL TIVAT</h3>
+         <p class="about__descr">
+            30 домов, расположенные на частной территории площадью 23000 м2: таунхаусы для 2х или 4х семей и отдельные виллы для одной семьи. У каждого дома есть свой участок площадью от 200 до 1200 м2. Все дома имеют панорамный вид на Тиватский залив.<br>
+           Окончание строительства посёлка — 2025 г.
+         </p>
+         <div class="about__more">
+            <a href="#contacts" class="about__btn">Оставить заявку</a>
          </div>
       </div>
    </div>
+   <!-- /#about.about__section -->
 
-   <section class="offer">
+   <div class="video">
       <div class="container">
-         <div class="offer__wrap">
-            <h3 class="title tac offer__title">Культурное наследие<br>и кулинарные традиции</h3>
-            <div class="offer__text">
-               <p class="text tac">
-                  Начните свое путешествие по Санкт-Петербургу с Гранд Отеля Европа. Отель, принимающий гостей на
-                  протяжении 145 лет, расположен в самом центре города. Историческое здание отеля находится на Невском
-                  проспекте, рядом с основными достопримечательностями Северной столицы.
-                  <br><br>
-                  Из окон открывается панорамный вид на ансамбль площади Искусств. История отеля неразрывно связана с
-                  творческим миром театра, музыки и балета.
+         <div class="video__wrap">
+            <iframe style="max-width:960px;" width="100%" height="540" src="https://www.youtube.com/embed/kKpXe9B3y7E"
+               title="Green Hill Tivat - a village of residential buildings of 30 houses 6 km from the center of Tivat"
+               frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen></iframe>
+         </div>
+      </div>
+   </div>
+   <!-- /.video -->
+
+   <div id="houses" class="houses">
+      <div class="container">
+         <h2 class="houses__title">Варианты домов:</h2>
+
+         <div class="houses__wrap">
+
+            <section class="house">
+               <h3 class="house__title">Таунхаус А</h3>
+               <h4 class="house__subtitle">200 000 €</h4>
+               <p class="house__descr">
+                  Состоит из 4 двухэтажных квартир. Площадь каждой квартиры — 110 м2. Площадь участка 200 м2. В каждой квартире: гостиная-кухня, 2 спальни, 2 санузла (один из них с ванной), 2 террасы, парковочное место.
+               </p>
+
+               <div class="swiper mySwiper">
+                  <div class="swiper__content swiper-wrapper">
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-a/1.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-a/2.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-a/3.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-a/4.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-a/5.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-a/6.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-a/7.webp) no-repeat center/cover;">
+                     </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button swiper-button-prev">
+                     <img src="img/prev.png" alt="">
+                  </div>
+                  <div class="swiper-button swiper-button-next">
+                     <img src="img/next.png" alt="">
+                  </div>
+               </div>
+
+            </section>
+
+            <section class="house">
+               <h3 class="house__title">Таунхаус B</h3>
+               <h4 class="house__subtitle">270 000 €</h4>
+               <p class="house__descr">
+                  Разделен на 2 двухэтажные квартиры, площадью 127 м2 каждая. Площадь участка 300 м2. Гостиная-кухня, 3 спальни, 2 санузла (один из них с ванной), 2 террасы, парковочное место.
+               </p>
+
+               <div class="swiper mySwiper">
+                  <div class="swiper__content swiper-wrapper">
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-b/1.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-b/2.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-b/3.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-b/4.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-b/5.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-b/6.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/townhouse-b/7.webp) no-repeat center/cover;">
+                     </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button swiper-button-prev">
+                     <img src="img/prev.png" alt="">
+                  </div>
+                  <div class="swiper-button swiper-button-next">
+                     <img src="img/next.png" alt="">
+                  </div>
+               </div>
+
+            </section>
+
+            <section class="house">
+               <h3 class="house__title">Вилла C</h3>
+               <h4 class="house__subtitle">320 000 €</h4>
+               <p class="house__descr">
+                  Двухэтажная вилла для одной семьи, площадью 155 м2. Площадь участка 500 м2. Гостиная-кухня, 3 спальни, 3 санузла (один из них с ванной), 1 терраса, парковочное место.
+               </p>
+
+               <div class="swiper mySwiper">
+                  <div class="swiper__content swiper-wrapper">
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/1.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/2.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/3.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/4.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/5.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/6.webp) no-repeat center/cover;">
+                     </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button swiper-button-prev">
+                     <img src="img/prev.png" alt="">
+                  </div>
+                  <div class="swiper-button swiper-button-next">
+                     <img src="img/next.png" alt="">
+                  </div>
+               </div>
+
+            </section>
+
+            <section class="house">
+               <h3 class="house__title">Вилла C1</h3>
+               <h4 class="house__subtitle">360 000 €</h4>
+               <p class="house__descr">
+                  Двухэтажная вилла для одной семьи, площадью 176 м2. Площадь участка 500 м2. Гостиная-кухня, 4 спальни, 3 санузла (один из них с ванной), 2 террасы, парковочное место.
+               </p>
+
+               <div class="swiper mySwiper">
+                  <div class="swiper__content swiper-wrapper">
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/1.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/2.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/3.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/4.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/5.webp) no-repeat center/cover;">
+                     </div>
+                     <div class="house__slide swiper-slide swiper-wrapper"
+                        style="background: url(img/villa1/1-1.webp) no-repeat center/cover;">
+                     </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button swiper-button-prev">
+                     <img src="img/prev.png" alt="">
+                  </div>
+                  <div class="swiper-button swiper-button-next">
+                     <img src="img/next.png" alt="">
+                  </div>
+               </div>
+
+            </section>
+         </div>
+      </div>
+   </div>
+   <!-- /#houses.houses -->
+
+   <div id="includes" class="includes">
+      <div class="container">
+         <h3 class="includes__title">Что входит в стоимость:</h3>
+         <div class="includes__wrap">
+            <div class="includes__item">
+               <img src="img/check.svg" alt="">
+               <div class="includes__item-descr">
+                  <h4 class="includes__item-title">Финишная отделка помещений</h4>
+                  <p class="includes__item-subtitle">Полы паркет/ламинат/керамическая плитка, стены и потолки, окрашенные в любой выбранный цвет.</p>
+               </div>
+            </div>
+            <div class="includes__item">
+               <img src="img/check.svg" alt="">
+               <div class="includes__item-descr">
+                  <h4 class="includes__item-title">Полная наружная отделка</h4>
+                  <p class="includes__item-subtitle">Фасад, кровля, водостоки.</p>
+               </div>
+            </div>
+            <div class="includes__item">
+               <img src="img/check.svg" alt="">
+               <div class="includes__item-descr">
+                  <h4 class="includes__item-title">Все инженерные системы</h4>
+                  <p class="includes__item-subtitle">Электрика по проекту, канализация, вода, бойлеры в санузлах, кондиционеры в гостиной и хозяйской спальне, тёплый пол в санузлах и на кухне.</p>
+               </div>
+            </div>
+            <div class="includes__item">
+               <img src="img/check.svg" alt="">
+               <div class="includes__item-descr">
+                  <h4 class="includes__item-title">Санузлы</h4>
+                  <p class="includes__item-subtitle">Плитка, сантехника.</p>
+               </div>
+            </div>
+            <div class="includes__item">
+               <img src="img/check.svg" alt="">
+               <div class="includes__item-descr">
+                  <h4 class="includes__item-title">Внешнее обустройство</h4>
+                  <p class="includes__item-subtitle">Терраса перед домом, парковка, дорожка ко входу в дом.</p>
+               </div>
+            </div>
+            <div class="includes__item">
+               <img src="img/check.svg" alt="">
+               <div class="includes__item-descr">
+                  <h4 class="includes__item-title">Участок перед домом</h4>
+                  <p class="includes__item-subtitle">Газон, живая изгородь.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- /#includes.includes -->
+
+   <div id="location" class="location">
+      <div class="container">
+         <h3 class="location__title">Расположение</h3>
+         <p class="location__subtitle">Поселок Кавач, в 7 минутах езды от центра Тивата.</p>
+         <div class="location__wrap">
+            <div class="location__item">
+               <img src="img/location/1.webp" alt="Green Area">
+               <h4 class="location__item-title">Зеленая зона</h4>
+               <p class="location__item-descr">
+                  Панорамный вид на море и город в окружении соснового леса и гор
+               </p>
+            </div>
+            <div class="location__item">
+               <img src="img/location/2.webp" alt="Comfortable location">
+               <h4 class="location__item-title">Удобное месторасположение</h4>
+               <p class="location__item-descr">
+                  Дома стоят в зеленой зоне на холме без туристического трафика, что позволяет наслаждаться отдыхом круглый год.
+               </p>
+            </div>
+            <div class="location__item">
+               <img src="img/location/3.webp" alt="Necessary infrastructure">
+               <h4 class="location__item-title">Необходимая инфраструктура</h4>
+               <p class="location__item-descr">
+                  В 2 км — пляж и аэропорт Тивата. В 4 км — крупные торговые центры.
                </p>
             </div>
          </div>
       </div>
-   </section>
+   </div>
+   <!-- /#location.location -->
 
-   <section class="rooms">
+   <div id="map" class="map">
       <div class="container">
-         <h3 class="title rooms__title tac">Номерной фонд</h3>
-         <div class="rooms__wrap">
-            <div class="rooms__wrap-item">
-               <div class="room__slider">
-                  <div class="swiper">
-                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/rooms/1/1.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="img/main.jpg" alt=""></div>
-                     </div>
-                     <div class="swiper-pagination"></div>
-                     <div class="slider__button-prev slider__button">
-                        <img src="img/rooms/prev.svg" alt="<">
-                     </div>
-                     <div class="slider__button-next slider__button">
-                        <img src="img/rooms/next.svg" alt=">">
-                     </div>
-                  </div>
-               </div>
-               <div class="room__content">
-                  <h4 class="title room__title">Делюкс с видом на площадь искусств <img src="img/rooms/1/size.svg"
-                        alt="30 кв.м"></h4>
-                  <p class="text room__subtitle">Двухместный номер с 1 кроватью и живописным видом из окна</p>
-                  <p class="text room__descr">Из окон этих номеров открывается чудесный вид на ансамбль площади
-                     Искусств, Русский музей и живописную зеленую зону в центре города.</p>
-                  <div class="room__content-features">
-                     <ul>
-                        <li>Кровать king-size</li>
-                        <li>Мраморная ванная комната</li>
-                        <li>Просторная зона отдыха</li>
-                        <li>Во всех номерах люкс нельзя курить</li>
-                     </ul>
-                     <ul>
-                        <li>Док-станция для iPod</li>
-                        <li>Письменный стол</li>
-                        <li>Роскошные туалетные</li>
-                        <li>принадлежности</li>
-                     </ul>
-                  </div>
-                  <div class="room__content-cta">
-                     <span class="text">от 35 000р./сутки</span>
-                     <button class="btn tre">Забронировать</button>
-                  </div>
-               </div>
-            </div>
-            <div class="rooms__wrap-item">
-               <div class="room__slider">
-                  <div class="swiper">
-                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/rooms/2/1.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="img/main.jpg" alt=""></div>
-                     </div>
-                     <div class="swiper-pagination"></div>
-                     <div class="slider__button-prev slider__button">
-                        <img src="img/rooms/prev.svg" alt="<">
-                     </div>
-                     <div class="slider__button-next slider__button">
-                        <img src="img/rooms/next.svg" alt=">">
-                     </div>
-                  </div>
-               </div>
-               <div class="room__content">
-                  <h4 class="title room__title">Терраса<img src="img/rooms/2/size.svg" alt="28 кв.м"></h4>
-                  <p class="text room__subtitle">Номера с террасой с видом на город</p>
-                  <p class="text room__descr">На верхнем этаже раскинулись номера «Терраса», оформленные в стиле
-                     роскошных частных апартаментов. С живописных террас открывается захватывающий вид на город, поэтому
-                     номера станут прекрасным выбором для отдыха в период теплых летних вечеров.</p>
-                  <div class="room__content-features">
-                     <ul>
-                        <li>Кровать king-size</li>
-                        <li>Мраморная ванная комната</li>
-                        <li>Просторная зона отдыха</li>
-                        <li>Во всех номерах люкс нельзя курить</li>
-                        <li>ЖК-телевизор и DVD-плеер</li>
-                     </ul>
-                     <ul>
-                        <li>Док-станция для iPod</li>
-                        <li>Письменный стол</li>
-                        <li>Роскошные туалетные</li>
-                        <li>принадлежности</li>
-                        <li>Беспроводной Интернет</li>
-                     </ul>
-                  </div>
-                  <div class="room__content-cta">
-                     <span class="text">от 30 000р./сутки</span>
-                     <button class="btn tre">Забронировать</button>
-                  </div>
-               </div>
-            </div>
-            <div class="rooms__wrap-item">
-               <div class="room__slider">
-                  <div class="swiper">
-                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/rooms/3/1.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="img/main.jpg" alt=""></div>
-                     </div>
-                     <div class="swiper-pagination"></div>
-                     <div class="slider__button-prev slider__button">
-                        <img src="img/rooms/prev.svg" alt="<">
-                     </div>
-                     <div class="slider__button-next slider__button">
-                        <img src="img/rooms/next.svg" alt=">">
-                     </div>
-                  </div>
-               </div>
-               <div class="room__content">
-                  <h4 class="title room__title">Премиум<img src="img/rooms/3/size.svg" alt="35 кв.м"></h4>
-                  <p class="text room__subtitle">Номера в лучших традициях русской культуры</p>
-                  <p class="text room__descr">Номера класса премиум — образцы подлинного, элегантного русского стиля,
-                     которым издавна славится наш отель. Окна выходят во внутренний дворик.</p>
-                  <div class="room__content-features">
-                     <ul>
-                        <li>Кровать king-size</li>
-                        <li>Мраморная ванная комната</li>
-                        <li>Просторная зона отдыха</li>
-                        <li>Во всех номерах люкс нельзя курить</li>
-                        <li>ЖК-телевизор и DVD-плеер</li>
-                        <li>Вечерний сервис в номере</li>
-                     </ul>
-                     <ul>
-                        <li>Док-станция для iPod</li>
-                        <li>Письменный стол</li>
-                        <li>Роскошные туалетные</li>
-                        <li>принадлежности</li>
-                        <li>Беспроводной Интернет</li>
-                        <li>Два телефона</li>
-                     </ul>
-                  </div>
-                  <div class="room__content-cta">
-                     <span class="text">от 50 000р./сутки</span>
-                     <button class="btn tre">Забронировать</button>
-                  </div>
-               </div>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.5669993146603!2d18.741114102465403!3d42.41566460883726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ad53d8e0b26ee3!2zNDLCsDI0JzU3LjUiTiAxOMKwNDQnMjkuNSJF!5e0!3m2!1sru!2sru!4v1658837452264!5m2!1sru!2sru" width="100%" height="385" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+   </div>
+   </div>
+   </div>
+   <!-- /#map.map -->
+
+   <div id="photos" class="photos">
+      <h3 class="photos__title">Фото поселка</h3>
+      <div class="swiper mySwiper2">
+         <div class="swiper__content2 swiper-wrapper">
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/1.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/2.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/3.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/4.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/5.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/6.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/7.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/8.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/9.webp) no-repeat center/cover;"></div>
+            <div class="house__slide swiper-slide swiper-wrapper"
+               style="background: url(img/photos/10.webp) no-repeat center/cover;"></div>
          </div>
 
-         <div class="offer__section">
-            <div class="offer__section-content">
-               <p class="text offer__section-title text">Комфорт, роскошь и яркие впечатления</p>
-               <p class="text offer__section-text">
-                  Атмосфера вневременной роскоши и современные удобства в одном из самых лучших отелей класса люкс в
-                  Европе. Наши легендарные номера включают прихожую, роскошную спальню и зону отдыха. Номера украшены
-                  произведениями искусства российских мастеров и идеально подходят для отдыха перед знакомством с
-                  городом.
-               </p>
-            </div>
-            <div class="offer__section-link">
-               <img class="offer__section-img" src="img/rooms/keys.svg" alt="Все номера">
-               <a href="#"><span>Смотреть все номера</span><br>в номерном фонде <img src="img/arrow.svg" alt=">"></a>
-            </div>
+         <div class="swiper-pagination swiper-pagination2"></div>
+         <div class="swiper-button swiper-button-prev swiper-button-prev2">
+            <img src="img/prev.png" alt="">
+         </div>
+         <div class="swiper-button swiper-button-next swiper-button-next2">
+            <img src="img/next.png" alt="">
          </div>
       </div>
-   </section>
+   </div>
+   <!-- /#photos.photos -->
 
-   <section class="leisure">
+   <div class="text">
       <div class="container">
-         <h3 class="title leisure__title tac">Досуг и развлечения</h3>
-         <div class="leisure__wrap">
-
-            <div class="leisure__wrap-item">
-               <img src="img/leisure/1.jpg" alt="Фитнес-центр">
-               <div class="leisure__item-content">
-                  <h4 class="title leisure__item-title">Фитнес-центр</h4>
-                  <p class="text leisure__descr">
-                     Фитнес-центр оснащен новейшими кардио- и силовыми тренажерами. Вы можете посетить занятия йогой, а
-                     после тренировки расслабиться в сауне или окунуться в небольшом бассейне.
-                  </p>
-                  <p class="text leisure__text ">Центр открыт круглосуточно, ежедневно</p>
-               </div>
-            </div>
-
-            <div class="leisure__wrap-item">
-               <img src="img/leisure/2.jpg" alt="Салон красоты">
-               <div class="leisure__item-content">
-                  <h4 class="title leisure__item-title">Салон красоты</h4>
-                  <p class="text leisure__descr">
-                     Салон оказывает услуги стрижки, окрашивания и укладки волос. Мастера салона также предложат вам
-                     косметологические процедуры, процедуры по уходу за телом, массаж и маникюр.
-                  </p>
-                  <p class="text leisure__text ">Открыт ежедневно с 9:00 до 21:00 / Тел.: +7 (812) 329 65 94</p>
-               </div>
-            </div>
-
-            <div class="leisure__wrap-item">
-               <img src="img/leisure/3.jpg" alt="Покупки в отеле">
-               <div class="leisure__item-content">
-                  <h4 class="title leisure__item-title">Покупки в отеле</h4>
-                  <p class="text leisure__descr">
-                     В отеле есть все необходимое для любителей шопинга. Дизайнерская одежда и аксессуары, ювелирные
-                     украшения и часы, а также сувениры на память от поездке от Гранд Отеля Европа в фойе отеля.
-                  </p>
-                  <p style="opacity: 0;" class="text leisure__text ">1</p>
-               </div>
-            </div>
-
-            <div class="leisure__wrap-item">
-               <img src="img/leisure/4.jpg" alt="Ресторан “Европа”">
-               <div class="leisure__item-content">
-                  <h4 class="title leisure__item-title">Ресторан “Европа”</h4>
-                  <p class="text leisure__descr">
-                     Старейший постоянно работающий ресторан России, образец вневременной элегантности и кулинарного
-                     мастерства. Особенность ресторана — уникальный интерьер в стиле ар-нуво, ярким украшением которого
-                     является впечатляющий витраж «Аполлон на колеснице».
-                  </p>
-                  <p style="opacity: 0;" class="text leisure__text ">1</p>
-               </div>
-            </div>
-         </div>
-         <div class="offer__section">
-            <div class="offer__section-content">
-               <p class="text offer__section-title text">Безупречный сервис и яркие впечатления</p>
-               <p class="text offer__section-text">
-                  Пребывание в нашем отеле сделает ваше путешествие в Санкт-Петербург по-настоящему незабываемым
-                  благодаря специальным услугам, которые доступны для гостей. Погрузитесь в удивительный мир винтажной
-                  роскоши и посетите ресторан, где подают лучшие в городе блюда высокой кухни.
-               </p>
-            </div>
-            <div class="offer__section-link">
-               <img class="offer__section-img" src="img/leisure/keys.svg" alt="Все места">
-               <a class="tac" href="#"><span>Смотреть все места</span><br>для посещений<img src="img/arrow.svg"
-                     alt=">"></a>
-            </div>
-         </div>
+         <p class="text__descr">В сентябре 2022 года планируется повышение цен на 20%. Не упустите отличную возможность купить дом мечты по привлекательной цене сейчас!</p>
       </div>
-   </section>
+   </div>
+   <!-- /.text -->
 
-   <section class="gallery">
+   <div id="contacts" class="form__wrap">
       <div class="container">
-         <h3 class="title gallery__title tac">Галерея</h3>
-         <div class="gallery__wrap">
-            <div class="gallery__wrap-item">
-               <img class="gallery__item-img" src="img/gallery/1.jpg" alt="1">
-               <img class="gallery__item-img" src="img/gallery/2.jpg" alt="2">
-               <img class="gallery__item-img" src="img/gallery/3.jpg" alt="3">
-            </div>
-            <div class="gallery__wrap-item">
-               <img class="gallery__item-img" src="img/gallery/2.jpg" alt="2">
-            </div>
-            <div class="gallery__wrap-item">
-               <img class="gallery__item-img" src="img/gallery/4.jpg" alt="4">
-               <img class="gallery__item-img" src="img/gallery/5.jpg" alt="5">
-               <div class="gallery__link">
-                  <img class="gallery__link-icon" src="img/gallery/keys.svg" alt="Все фото">
-                  <a class="tac" href="#"><span>Смотреть все фото</span><br>в галерее <img class="gallery__link-img"
-                        src="img/arrow.svg" alt=">"></a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
+         <h3 class="form__title">Добро пожаловать в Green Hill Tivat</h3>
+         <p class="form__subtitle">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
 
-   <section class="home__space">
-      <div class="container">
-         <img src="img/logo.svg" alt="Grand Hotel Europe" class="home__space-logo">
-         <h2 class="title home__space-title">A Belmond hotel st. Petersburg</h2>
-      </div>
-   </section>
+         <form class="form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Site">
+            <input type="hidden" name="admin_email" value="brandnewacc1234@gmail.com">
+            <input type="hidden" name="form_subject" value="Message from site">
+            <!-- END Hidden Required Fields -->
 
-   <section class="down__form">
-      <div class="container">
-         <form class="main__form">
-            <div class="down__form-item">
-               <div class="main__form-item">
-                  <span class="form__item-title text">Номер</span>
-                  <label for="room" class="form__label">
-                     <div class="custom__select custom__field">
-                        <select class="form__field" name="room">
-                           <option>Выберите номер:</option>
-                           <option value="1">Двухместный номер с 1-й кроватью</option>
-                           <option value="21">Двухместный номер с 2-й кроватью</option>
-                        </select>
-                     </div>
-                  </label>
-               </div>
-               <div class="main__form-item">
-                  <span class="form__item-title text">Даты пребывания</span>
-                  <div class="custom__form-item custom__form-date">
-                     <label for="" class="form__label text">
-                        <input class="form__field date__field" type="text" name="Заезд" id="el3"
-                           placeholder="Дата заезда" required maxlength="0" autocomplete="off">
-                     </label>
-                  </div>
-               </div>
-               <div class="main__form-item">
-                  <span id="empty__span1" style="opacity: 0;" class="form__item-title text">Даты пребывания</span>
-                  <div class="custom__form-item custom__form-date">
-                     <label for="" class="form__label text">
-                        <input class="form__field date__field" type="text" name="Выезд" id="el4"
-                           placeholder="Дата выезда" required maxlength="0" autocomplete="off">
-                     </label>
-                  </div>
-               </div>
-            </div>
-            <div class="down__form-item">
-               <div class="main__form-item">
-                  <span class="form__item-title text">Ваше имя</span>
-                  <label for="" class="form__label text">
-                     <input class="form__field" type="text" name="Имя" required autocomplete="off">
-                  </label>
-               </div>
-               <div class="main__form-item">
-                  <span class="form__item-title text">Контактный телефон</span>
-                  <label for="" class="form__label text">
-                     <input class="form__field" type="tel" name="Телефон" minlength="6" max="20" required
-                        autocomplete="off" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
-                  </label>
-               </div>
-               <div class="main__form-item main__form-btn">
-                  <button type="submit" class="btn tre">Забронировать</button>
-               </div>
-            </div>
+            <input type="text" name="name" placeholder="Имя*" required>
+            <input type="email" name="email" placeholder="E-mail*" required>
+            <input id="phone" type="tel" name="Tel" required>
+            <button type="submit">Оставить заявку</button>
          </form>
+         <p class="form__privacy">Нажимая «Отправить заявку», вы соглашаетесь с условиями обработки данных</p>
       </div>
-   </section>
+   </div>
+   <!-- /#form__wrap.form__wrap -->
 
    <footer class="footer">
       <div class="container">
-         <div class="footer__item">
-            <h4 class="title footer__item-title">Контакты</h4>
-            <ul class="footer__contacts">
-               <li>Бронирования: <a href="tel:+78003330319">8 (800) 333-03-19</a></li>
-               <li>Телефон отеля: <a href="tel:+78003330319">8 (800) 123-45-67</a></li>
-               <li>E-mail: <a href="mailto:grandhotel@mail.ru">grandhotel@mail.ru</a></li>
-               <li>Адрес: <a href="#">Невский проспект, Михайловская улица, 1/7, Санкт-Петербург, Россия, 191186</a>
-               </li>
-               <li><a class="footer__contacts-active" href="#">Правила и условия бронирования</a></li>
-            </ul>
+         <div class="footer__links">
+            <a href="https://www.instagram.com/ecosmart.invest/"><img src="img/social/insta.svg" alt="instagram"></a>
          </div>
-         <div class="footer__item">
-            <h4 class="title footer__item-title">Меню</h4>
-            <ul class="menu">
-               <li><a class="tre text current" href="#">Главная</a></li>
-               <li><a class="tre text" href="#">Номерной фонд</a></li>
-               <li><a class="tre text" href="#">Досуг и развлечения</a></li>
-               <li><a class="tre text" href="#">Галерея</a></li>
-               <li><a class="tre text" href="#">Контакты</a></li>
-            </ul>
-         </div>
-         <p class="footer__root text">
-            ООО “ОТЕЛЬ СОЧИ ГРУПП” <br id="empty__span2"><br>
-            ИНН: 6949114940 <br>
-            ОГРН: 1216900005926
+         <p class="footer__descr">
+            2 Kaljmani Street, Tivat, Montenegro<br>
+            Email: newtixmail@gmail.com
          </p>
-         <div class="footer__social footer__social-phone">
-            <p class="text">
-               Мы в мессенджерах<br>и соцсетях
-            </p>
-            <div class="footer__social-wrap">
-               <a href="#"><img src="img/social/wa.svg" alt="WatsApp"></a>
-               <a href="#"><img src="img/social/te.svg" alt="Telegram"></a>
-               <a href="#"><img src="img/social/in.svg" alt="Instagram"></a>
-            </div>
-         </div>
       </div>
    </footer>
-   <div class="copy">
-      <div class="container tac">
-         <p class="text copy__text tac">
-            Обращаем ваше внимание на то, что данный сайт носит исключительно информационный характер и ни при каких
-            условиях результаты расчетов не являются публичной офертой, определяемой положениями статьи 437 Гражданского
-            кодекса Российской Федерации. За окончательным расчетом обращайтесь к нашим менеджерам. Данный ресурс не
-            является официальным сайтом отеля и принадлежит компании ООО «Отель Сочи Групп», который является
-            официальным партером курорта НАО «Красная Поляна».
-         </p>
-         <a class="footer__contacts-active text tac" href="#">Политика конфиденциальности</a>
-      </div>
-   </div>
+   <!-- /.footer -->
+
 
    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-   <script src="js/datepicker.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script src="js/intlTelInput.js"></script>
    <script src="js/main.js"></script>
-   <!-- Make with ❤ https://t.me/ilyamvv -->
 </body>
 
 </html>
