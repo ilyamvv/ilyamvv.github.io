@@ -74,8 +74,14 @@ $(document).ready(function () {
    // init plugin
    var input = document.querySelector("#phone");
    window.intlTelInput(input, {
-      utilsScript: "js/utils.js",
-      singleDialCode:true,
-      InitialCountry:7
-    });
+      initialCountry: "auto",
+      geoIpLookup: function (callback) {
+         $.get('https://ipinfo.io', function () {}, "jsonp").always(function (resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "us";
+            callback(countryCode);
+         });
+      },
+      singleDialCode: true,
+      utilsScript: "/utils.js",
+   });
 });
