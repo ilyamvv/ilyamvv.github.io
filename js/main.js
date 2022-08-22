@@ -76,6 +76,6 @@ $(document).ready(function () {
    window.intlTelInput(input, {
       utilsScript: "js/utils.js",
       singleDialCode:true,
-      InitialCountry:"7"
+      InitialCountry:"+7"
     });
 });
