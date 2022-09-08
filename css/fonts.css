@@ -1,0 +1,23 @@
+@font-face {
+   font-family: 'AtypText';
+   src: url(../fonts/AtypText-Regular.ttf) format('ttf'), url(../fonts/AtypText-Regular.woff) format('woff');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'AtypText';
+   src: url(../fonts/AtypText-Medium.ttf) format('ttf'), url(../fonts/AtypText-Medium.woff) format('woff');
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'AtypText';
+   src: url(../fonts/AtypText-Semibold.ttf) format('ttf'), url(../fonts/AtypText-Semibold.woff) format('woff');
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'YesevaOne';
+   src: url(../fonts/YesevaOne-Regular.ttf) format('ttf');
+   font-weight: 400;
+}

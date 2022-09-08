@@ -1,0 +1,211 @@
+.main__form-item {
+   margin-bottom: 25px;
+}
+
+form .form__item-title {
+   display: block;
+   color: var(--base__color);
+   font-weight: 600;
+   margin-bottom: 10px;
+   padding-left: 13px;
+}
+
+.form__field {
+   width: 100%;
+   height: 50px;
+   background: #f1f1f1 !important;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+   border: transparent;
+   padding: 0 14px 0 25px;
+   color: var(--base__text);
+   outline: none;
+   cursor: pointer;
+   font-family: 'AtypText', sans-serif;
+   font-weight: 600;
+}
+
+.form__field::placeholder {
+   color: var(--base__text);
+}
+
+.custom__select {
+   position: relative;
+}
+
+.custom__select select {
+   display: none;
+}
+
+.select-selected::after {
+   position: absolute;
+   content: url(../../img/form/arrow.svg);
+   top: 50%;
+   margin-top: -14px;
+   right: 14px;
+   width: 28px;
+   height: 28px;
+   border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+}
+
+.select-selected.select-arrow-active::after {
+   transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
+}
+
+.select-items div,
+.select-selected {
+   width: 100%;
+   height: 50px;
+   background: #f1f1f1;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+   border: transparent;
+   padding: 0 14px 0 25px;
+   color: #000;
+   outline: none;
+   cursor: pointer;
+   user-select: none;
+   display: flex;
+   align-items: center;
+}
+
+.select-items {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   z-index: 99;
+   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.select-hide {
+   display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+   background: var(--active__color);
+}
+
+.custom__field {
+   display: flex;
+}
+
+.custom__form-date,
+.custom__form-contacts {
+   display: flex;
+   justify-content: space-between;
+}
+
+.custom__form-contacts div,
+.custom__form-date label {
+   display: block;
+   width: calc(50% - 10px);
+   position: relative;
+}
+
+.custom__form-date label::after {
+   content: '';
+   display: block;
+   position: absolute;
+   right: 14px;
+   top: 50%;
+   margin-top: -14px;
+   width: 28px;
+   height: 28px;
+   background: url(../../img/form/calendar.svg) no-repeat;
+   z-index: 1;
+   pointer-events: none;
+}
+
+.main__form-btn {
+   display: flex;
+   margin: 0;
+   justify-content: end;
+}
+
+.send__overlay {
+   position: fixed;
+   z-index: 9999;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   pointer-events: none;
+   display: none;
+   opacity: 0;
+}
+
+.send__body-success {
+   display: block;
+}
+
+.send__body {
+   position: relative;
+   top: 100px;
+   left: 25%;
+   width: 50%;
+   background: var(--secondary__color);
+   padding: 35px;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+   color: var(--base__color);
+   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.send__body-success {
+   animation: success 4s linear .5s 1 forwards;
+   -webkit-animation: success 4s linear .5s 1 forwards;
+}
+
+@keyframes success {
+
+   0%,
+   100% {
+      opacity: 0;
+   }
+
+   10%,
+   90% {
+      opacity: 1;
+   }
+}
+
+.send__body .title {
+   font-size: 24px;
+   margin-bottom: 20px;
+   color: var(--base__color);
+}
+
+.send__body .text {
+   color: var(--base__color);
+}
+.air-datepicker{
+   background: #f1f1f1 !important;
+}
+.air-datepicker-cell.-selected-{
+   background: var(--active__color) !important;
+}
+.-day-:hover{
+   color: var(--base__text);
+}
+.air-datepicker-cell.-day-.-other-month-, .air-datepicker-cell.-year-.-other-decade-{
+   color: var(--active__color) !important; 
+}

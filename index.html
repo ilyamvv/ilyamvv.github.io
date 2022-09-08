@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link type="image/x-icon" href="/fav.png" rel="shortcut icon">
+   <link type="Image/x-icon" href="/fav.png" rel="icon">
+   <title>Hotel Astoria | St Petersburg</title>
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="description" content="11111">
+   <meta name="keywords" content="111111">
+</head>
+
+<body>
+
+   <div class="send__overlay">
+      <div class="send__body">
+         <h6 class="title tac">Успешно отправлено!</h6>
+         <p class="text tac">Мы свяжемся с Вами в ближайшее время.</p>
+      </div>
+   </div>
+
+   <nav class="phone__nav tre">
+      <div class="phone__nav-item">
+         <h5 class="phone__nav-title title">Меню</h5>
+         <ul class="menu">
+            <li><a class="tre text current" href="/">Главная</a></li>
+            <li><a class="tre text" href="/rooms.html">Номерной фонд</a></li>
+            <li><a class="tre text" href="/dosug.html">Досуг и развлечения</a></li>
+            <li><a class="tre text" href="/gallery.html">Галерея</a></li>
+            <li><a class="tre text" href="#order__scroll">Контакты</a></li>
+         </ul>
+      </div>
+      <div class="phone__nav-item">
+         <h5 class="phone__nav-title title">Контакты</h5>
+         <ul class="header__nav-contacts">
+            <li>Бронирование: <a href="tel:88123896090">8(812)389-60-90</a></li>
+            <!-- <li>Телефон отеля: <a href="tel:88123896090">8(812)389-60-90</a></li> -->
+            <!-- <li>E-mail: <a href="mailto:grandhotel@mail.ru">grandhotel@mail.ru</a></li> -->
+            <li>Адрес: <a href="#">г. Санкт-Петербург, ул. Большая Морская, 39</a>
+            </li>
+            <!-- <li><a class="header__nav-active" href="#">Правила и условия бронирования</a></li> -->
+         </ul>
+      </div>
+      <!-- <div class="footer__social">
+         <p class="text">Мы в мессенджерах<br>и соцсетях</p>
+         <div class="footer__social-wrap">
+            <a href="#"><img src="img/social/wa.svg" alt="WatsApp"></a>
+            <a href="#"><img src="img/social/te.svg" alt="Telegram"></a>
+            <a href="#"><img src="img/social/in.svg" alt="Instagram"></a>
+         </div>
+      </div> -->
+   </nav>
+
+   <header class="header">
+      <div class="container">
+         <a href="/" class="logo"><img src="img/logo.svg" alt="Hotel Astoria"></a>
+         <nav class="nav desktop__nav">
+            <ul class="menu">
+               <li><a class="tre text current" href="/">Главная</a></li>
+               <li><a class="tre text" href="/rooms.html">Номерной фонд</a></li>
+               <li><a class="tre text" href="/dosug.html">Досуг и развлечения</a></li>
+               <li><a class="tre text" href="/gallery.html">Галерея</a></li>
+               <li><a class="tre text" href="#order__scroll">Контакты</a></li>
+            </ul>
+         </nav>
+         <div class="header__contacts desktop__nav">
+            <a href="tel:88123896090" class="header__phone text">8(812)389-60-90</a>
+            <!-- <div class="header__contacts-icons">
+               <a href="#"><img src="img/social/wa.svg" alt="WatsApp"></a>
+               <a href="#"><img src="img/social/te.svg" alt="Telegram"></a>
+               <a href="#"><img src="img/social/in.svg" alt="Instagram"></a>
+            </div> -->
+         </div>
+         <button class="menu__btn tre">
+            <span id="menu__btn-line1" class="menu__btn-line tre"></span>
+            <span id="menu__btn-line2" class="menu__btn-line tre"></span>
+            <span id="menu__btn-line3" class="menu__btn-line tre"></span>
+         </button>
+      </div>
+   </header>
+
+   <div class="main">
+      <div class="container">
+         <h1 class="title main__title tac">Hotel Astoria St Petersburg</h1>
+         <form class="main__form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Hotel Astoria">
+            <input type="hidden" name="form_subject" value="Заявка">
+            <!-- END Hidden Required Fields -->
+
+            <div class="main__form-item">
+               <span class="form__item-title text">Номер</span>
+               <label for="" class="form__label">
+                  <div class="custom__select custom__field">
+                     <select class="form__field" name="Номер">
+                        <option>Выберите номер:</option>
+                        <option value="Classic Room">Classic Room</option>
+                        <option value="Deluxe Room">Deluxe Room</option>
+                        <option value="Superior Deluxe Room">Superior Deluxe Room</option>
+                        <option value="Studio Room">Studio Room</option>
+                        <option value="Junior Suite">Junior Suite</option>
+                        <option value="Junior Suite Cathedral View">Junior Suite Cathedral View</option>
+                     </select>
+                  </div>
+               </label>
+            </div>
+            <div class="main__form-item">
+               <span class="form__item-title text">Дата заезда</span>
+               <div class="custom__form-date">
+                  <label for="" class="form__label text">
+                     <input class="form__field date__field" type="text" name="Заезд" id="el1" placeholder="Дата заезда"
+                        required maxlength="0" autocomplete="off">
+                  </label>
+               </div>
+            </div>
+            <div class="main__form-item">
+               <span class="form__item-title text">Дата выезда</span>
+               <div class="custom__form-date">
+                  <label for="" class="form__label text">
+                     <input class="form__field date__field" type="text" name="Выезд" id="el2" placeholder="Дата выезда"
+                        required maxlength="0" autocomplete="off">
+                  </label>
+               </div>
+            </div>
+
+            <div class="main__form-item">
+               <span class="form__item-title text">Ваше имя</span>
+               <label for="" class="form__label text">
+                  <input class="form__field" type="text" name="Имя" required autocomplete="off" placeholder="Имя">
+               </label>
+            </div>
+            <div class="main__form-item">
+               <span class="form__item-title text">Контактный телефон</span>
+               <label for="" class="form__label text">
+                  <input class="form__field" type="tel" name="Телефон" minlength="6" max="20" required
+                     autocomplete="off" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" placeholder="Телефон">
+               </label>
+            </div>
+            <div class="main__form-item">
+               <span class="form__item-title text">&nbsp;</span>
+               <button type="submit" class="btn tre">Забронировать</button>
+            </div>
+         </form>
+      </div>
+   </div>
+
+
+   <section class="offer">
+      <div class="container">
+         <div class="offer__wrap">
+            <h3 class="title tac offer__title">Hotel Astoria St Petersburg</h3>
+            <div class="offer__text">
+               <p class="text tac">
+                  Наш отель расположен в идеальном месте для знакомства с городом. Буквально за порогом отеля —
+                  Исаакиевская площадь и знаменитый Исаакиевский собор, а в двух шагах — очаровательный Львиный мостик и
+                  культовый «Медный всадник», памятник Петру Великому. <br>
+                  Построенный в период с 1911 по 1912 годы, отель «Астория» был спроектирован известным архитектором из Санкт-Петербурга Федором Лидвалем.Будучи исторически самым известным отелем в городе, наше здание теперь является объектом культурного наследия федерального значения и охраняется государством.
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="rooms" class="rooms">
+      <div class="container">
+         <h3 class="title rooms__title tac">Номерной фонд</h3>
+         <div class="rooms__wrap">
+            <div class="rooms__wrap-item">
+               <div class="room__slider">
+                  <div class="swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/rooms__page/1/1.jpg" alt="Номер"></div>
+                        <div class="swiper-slide"><img src="img/rooms__page/1/2.jpg" alt="Номер"></div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                     <div class="slider__button-prev slider__button">
+                        <img src="img/rooms/prev.svg" alt="<">
+                     </div>
+                     <div class="slider__button-next slider__button">
+                        <img src="img/rooms/next.svg" alt=">">
+                     </div>
+                  </div>
+               </div>
+               <div class="room__content">
+                  <h4 class="title room__title">
+                     Classic Room
+                  </h4>
+                  <p class="text room__subtitle">
+                     До 2х мест / от 25 м<sup>2</sup>
+                  </p>
+                  <p class="text room__descr">
+                     Удобные и уютные номера Classic идеально подойдут как для отдыха, так и для деловых поездок.
+                     Спальня совмещена с гостиной и оснащена большой двуспальной кроватью "King-size" или двумя
+                     односпальными кроватями, креслом, письменным столом и кофейным столиком.
+                  </p>
+                  <div class="room__content-features">
+                     <ul>
+                        <li>Дополнительные опции для каждого номера уточняются отдельно*</li><br>
+                     </ul>
+                  </div>
+                  <div class="room__content-cta">
+                     <!-- <span class="text">
+                        от 5 500 руб./ночь
+                     </span> -->
+                     <a href="#order__scroll" class="btn tre">Забронировать</a>
+                  </div>
+               </div>
+            </div>
+            <!-- /rooms__item -->
+
+            <div class="rooms__wrap-item">
+               <div class="room__slider">
+                  <div class="swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/rooms__page/2/1.jpg" alt="Номер"></div>
+                        <div class="swiper-slide"><img src="img/rooms__page/2/2.jpg" alt="Номер"></div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                     <div class="slider__button-prev slider__button">
+                        <img src="img/rooms/prev.svg" alt="<">
+                     </div>
+                     <div class="slider__button-next slider__button">
+                        <img src="img/rooms/next.svg" alt=">">
+                     </div>
+                  </div>
+               </div>
+               <div class="room__content">
+                  <h4 class="title room__title">
+                     Deluxe Room
+                  </h4>
+                  <p class="text room__subtitle">
+                     До 2х мест / от 25 м<sup>2</sup>
+                  </p>
+                  <p class="text room__descr">
+                     Номера Deluxe оснащены двумя односпальными кроватями. Из номеров открывается вид на историческую
+                     часть города. Гостиная совмещена со спальней и оснащена креслом, письменным столом и кофейным
+                     столиком.
+                  </p>
+                  <div class="room__content-features">
+                     <ul>
+                        <li>Дополнительные опции для каждого номера уточняются отдельно*</li><br>
+                     </ul>
+                  </div>
+                  <div class="room__content-cta">
+                     <a href="#order__scroll" class="btn tre">Забронировать</a>
+                  </div>
+               </div>
+            </div>
+            <!-- /rooms__item -->
+
+            <div class="rooms__wrap-item">
+               <div class="room__slider">
+                  <div class="swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/rooms__page/3/1.jpg" alt="Номер"></div>
+                        <div class="swiper-slide"><img src="img/rooms__page/3/2.jpg" alt="Номер"></div>
+                        <div class="swiper-slide"><img src="img/rooms__page/3/3.jpg" alt="Номер"></div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                     <div class="slider__button-prev slider__button">
+                        <img src="img/rooms/prev.svg" alt="<">
+                     </div>
+                     <div class="slider__button-next slider__button">
+                        <img src="img/rooms/next.svg" alt=">">
+                     </div>
+                  </div>
+               </div>
+               <div class="room__content">
+                  <h4 class="title room__title">
+                     Superior Deluxe Room
+                  </h4>
+                  <p class="text room__subtitle">
+                     До 2х мест / от 25 м<sup>2</sup>
+                  </p>
+                  <p class="text room__descr">
+                     Из номеров Superior Deluxe открывается прекрасный вид на Исаакиевскую площадь. Гостиная совмещена
+                     со спальней и оснащена креслом, письменным столом и кофейным столиком.
+                  </p>
+                  <div class="room__content-features">
+                     <ul>
+                        <li>Дополнительные опции для каждого номера уточняются отдельно*</li><br>
+                     </ul>
+                  </div>
+                  <div class="room__content-cta">
+                     <a href="#order__scroll" class="btn tre">Забронировать</a>
+                  </div>
+               </div>
+            </div>
+            <!-- /rooms__item -->
+         </div>
+
+         <div class="offer__section">
+            <div class="offer__section-content">
+               <p class="text offer__section-title text">Комфорт, роскошь и яркие впечатления</p>
+               <p class="text offer__section-text">
+                  Красивейшая архитектура, шедевры балета, сверкающие луковицы куполов русских православных церквей —
+                  Санкт-Петербург дарит вам настоящий праздник для глаз. Осенний Петербург, когда листва окрашивается в
+                  багрец и золото, а солнечный свет приобретает характерную золотистую прозрачность, наполнен особой
+                  магией
+               </p>
+            </div>
+            <div class="offer__section-link">
+               <img class="offer__section-img" src="img/rooms/keys.svg" alt="Все номера">
+               <a href="/rooms.html"><span>Смотреть все номера</span><br>в номерном фонде <img src="img/arrow.svg"
+                     alt=">"></a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="leisure" class="leisure">
+      <div class="container">
+         <h3 class="title leisure__title tac">Досуг и развлечения</h3>
+         <div class="leisure__wrap">
+
+            <div class="leisure__wrap-item">
+               <img src="img/leisure/1.jpg" alt="ASTORIA СПА-САЛОН">
+               <div class="leisure__item-content">
+                  <h4 class="title leisure__item-title">ASTORIA СПА-САЛОН</h4>
+                  <p class="text leisure__descr">
+                     В мае 2011 годе в отеле «Астория» состоялось открытие первого в Санкт-Петербурге СПА-центра.
+                     <br>
+                     Он расположен на 7 этаже отеля и предлагает посетителям все виды чувственного удовольствия:
+                     ароматерапию, массаж, обертывания, гидротерапию, парение с ашибори в сауне, солевой пилинг и
+                     криообертывания в хаммаме, индивидуальные занятия йогой и фитнесом.
+                  </p>
+               </div>
+            </div>
+
+            <div class="leisure__wrap-item">
+               <img src="img/leisure/3.jpg" alt="Фитнес">
+               <div class="leisure__item-content">
+                  <h4 class="title leisure__item-title">Фитнес</h4>
+                  <p class="text leisure__descr">
+                     В отелях Rocco Forte спорту уделяется большое внимание, и программа «Фитнес Rocco Forte» тому подтверждение. Мы разработали инновационную программу, установили самое современное оборудование марки Technogym, пригасили профессиональных тренеров, которые будут во всем помогать вам.
+                  </p>
+               </div>
+            </div>
+
+         </div>
+         <div class="offer__section">
+            <div class="offer__section-content">
+               <p class="text offer__section-title text">Безупречный сервис и яркие впечатления</p>
+               <p class="text offer__section-text">
+                  В отеле «Астория» есть СПА-центр и салон красоты, которые предлагают широкий выбор программ по уходу. В нашем СПА-центре вас ожидают последние новинки в сфере омолаживающей терапии для мужчин и женщин, а также тренажерный зал, занятия йогой, сауна и турецкий хаммам. «SPA SISLEY» специализируется на косметическом уходе за волосами, лицом и телом. Посещение спа-центра ведется исключительно по предварительной записи
+               </p>
+            </div>
+            <div class="offer__section-link">
+               <img class="offer__section-img" src="img/leisure/keys.svg" alt="Все места">
+               <a class="tac" href="/dosug.html"><span>Смотреть все места</span><br>для посещений<img
+                     src="img/arrow.svg" alt=">"></a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="gallery" class="gallery">
+      <div class="container">
+         <h3 class="title gallery__title tac">Галерея</h3>
+         <div class="gallery__wrap">
+            <div class="gallery__wrap-item">
+               <img class="gallery__item-img" src="img/rooms__page/3/2.jpg" alt="1">
+               <img class="gallery__item-img" src="img/rooms__page/2/2.jpg" alt="2">
+               <img class="gallery__item-img" src="img/rooms__page/1/2.jpg" alt="3">
+            </div>
+            <div class="gallery__wrap-item">
+               <img class="gallery__item-img" src="img/rooms__page/4/2.jpg" alt="2">
+            </div>
+            <div class="gallery__wrap-item">
+               <img class="gallery__item-img" src="img/rooms__page/5/1.jpg" alt="4">
+               <img class="gallery__item-img" src="img/rooms__page/6/2.jpg" alt="5">
+               <div class="gallery__link">
+                  <img class="gallery__link-icon" src="img/gallery/keys.svg" alt="Все фото">
+                  <a class="tac" href="/gallery.html"><span>Смотреть все фото</span><br>в галерее <img
+                        class="gallery__link-img" src="img/arrow.svg" alt=">"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="order__scroll" class="home__space">
+      <div class="container">
+         <img src="img/logo.svg" alt="Hotel Astoria" class="home__space-logo">
+         <h2 class="title home__space-title">Hotel Astoria</h2>
+      </div>
+   </section>
+
+   <section id="order__form" class="down__form">
+      <div class="container">
+         <form class="main__form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Hotel Astoria">
+            <input type="hidden" name="form_subject" value="Заявка">
+            <!-- END Hidden Required Fields -->
+            <div class="down__form-item">
+               <div class="main__form-item">
+                  <span class="form__item-title text">Номер</span>
+                  <label for="" class="form__label">
+                     <div class="custom__select custom__field">
+                        <select class="form__field" name="Номер">
+                           <option>Выберите номер:</option>
+                           <option value="Classic Room">Classic Room</option>
+                           <option value="Deluxe Room">Deluxe Room</option>
+                           <option value="Superior Deluxe Room">Superior Deluxe Room</option>
+                           <option value="Studio Room">Studio Room</option>
+                           <option value="Junior Suite">Junior Suite</option>
+                           <option value="Junior Suite Cathedral View">Junior Suite Cathedral View</option>
+                        </select>
+                     </div>
+                  </label>
+               </div>
+               <div class="main__form-item">
+                  <span class="form__item-title text">Даты пребывания</span>
+                  <div class="custom__form-item custom__form-date">
+                     <label for="" class="form__label text">
+                        <input class="form__field date__field" type="text" name="Заезд" id="el3"
+                           placeholder="Дата заезда" required maxlength="0" autocomplete="off">
+                     </label>
+                  </div>
+               </div>
+               <div class="main__form-item">
+                  <span id="empty__span1" style="opacity: 0;" class="form__item-title text">Даты пребывания</span>
+                  <div class="custom__form-item custom__form-date">
+                     <label for="" class="form__label text">
+                        <input class="form__field date__field" type="text" name="Выезд" id="el4"
+                           placeholder="Дата выезда" required maxlength="0" autocomplete="off">
+                     </label>
+                  </div>
+               </div>
+            </div>
+            <div class="down__form-item">
+               <div class="main__form-item">
+                  <span class="form__item-title text">Ваше имя</span>
+                  <label for="" class="form__label text">
+                     <input class="form__field" type="text" name="Имя" required autocomplete="off" placeholder="Имя">
+                  </label>
+               </div>
+               <div class="main__form-item">
+                  <span class="form__item-title text">Контактный телефон</span>
+                  <label for="" class="form__label text">
+                     <input class="form__field" type="tel" name="Телефон" minlength="6" max="20" required
+                        autocomplete="off" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                        placeholder="Телефон">
+                  </label>
+               </div>
+               <div class="main__form-item main__form-btn">
+                  <button type="submit" class="btn tre">Забронировать</button>
+               </div>
+            </div>
+         </form>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__item">
+            <h4 class="title footer__item-title">Контакты</h4>
+            <ul class="footer__contacts">
+               <li>Бронирование: <a href="tel:88123896090">8(812)389-60-90</a></li>
+               <!-- <li>Телефон отеля: <a href="tel:88123896090">8(812)389-60-90</a></li> -->
+               <!-- <li>E-mail: <a href="mailto:grandhotel@mail.ru">grandhotel@mail.ru</a></li> -->
+               <li>Адрес: <a href="#">Россия, г. Санкт-Петербург, ул. Большая Морская, 39</a></li>
+               <li>
+                  <iframe
+                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6e2b2c4955fa5828bea9b93b3d2d700361e29d05f3463f4ebb20c29c6003af1&amp;source=constructor"
+                     width="100%" height="350" frameborder="0"></iframe>
+               </li>
+               <!-- <li><a class="footer__contacts-active" href="#">Правила и условия бронирования</a></li> -->
+            </ul>
+         </div>
+         <div class="footer__item">
+            <h4 class="title footer__item-title">Меню</h4>
+            <ul class="menu">
+               <li><a class="tre text current" href="/">Главная</a></li>
+               <li><a class="tre text" href="/rooms.html">Номерной фонд</a></li>
+               <li><a class="tre text" href="/dosug.html">Досуг и развлечения</a></li>
+               <li><a class="tre text" href="/gallery.html">Галерея</a></li>
+               <li><a class="tre text" href="#order__scroll">Контакты</a></li>
+            </ul>
+         </div>
+         <!-- <p class="footer__root text">
+            "ОТЕЛЬ МЕНЕДЖМЕНТ<br id="empty__span2"><br>
+            ИНН: 5836897375<br>
+            КПП: 583601001
+         </p> -->
+         <!-- <div class="footer__social footer__social-phone">
+            <p class="text">
+               Мы в мессенджерах<br>и соцсетях
+            </p>
+            <div class="footer__social-wrap">
+               <a href="#"><img src="img/social/wa.svg" alt="WatsApp"></a>
+               <a href="#"><img src="img/social/te.svg" alt="Telegram"></a>
+               <a href="#"><img src="img/social/in.svg" alt="Instagram"></a>
+            </div>
+         </div> -->
+      </div>
+   </footer>
+   <div class="copy">
+      <div class="container tac">
+         <p class="text copy__text tac">
+            Обращаем ваше внимание на то, что данный сайт носит исключительно информационный характер и ни при каких
+            условиях результаты расчетов не являются публичной офертой, определяемой положениями статьи 437 Гражданского
+            кодекса Российской Федерации. За окончательным расчетом обращайтесь к нашим менеджерам.
+         </p>
+         <!-- <a class="footer__contacts-active text tac" href="#">Политика конфиденциальности</a> -->
+         <br>
+         <p style="font-size: 12px;color:var(--primary__text)">© <span id="current__date"></span>.
+            <script type="text/javascript">
+               function date_time() {
+                  var current_datetime = new Date();
+                  var year = current_datetime.getFullYear();
+                  return year
+               }
+               document.getElementById('current__date').innerHTML = date_time();
+            </script>
+         </p>
+      </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="js/datepicker.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/main.js"></script>
+   <!-- Make with ❤ https://t.me/ilyamvv -->
+   <link rel="stylesheet" href="https://cdn.saas-support.com/widget/cbk.css">
+   <script type="text/javascript"
+      src="https://cdn.saas-support.com/widget/cbk.js?wcb_code=6d9647a38bb455fa3c2aa389850bc0b0" charset="UTF-8" async>
+   </script>
+</body>
+
+</html>
