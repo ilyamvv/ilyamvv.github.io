@@ -900,8 +900,8 @@ body {
   }
 
   .catalog__wrapper {
-    overflow-x: scroll;
     padding-bottom: 10px;
+    overflow-x: scroll;
   }
 
   .catalog__wrap {
@@ -1043,6 +1043,9 @@ body {
 
   .form__input-btn {
     width: 100%;
+  }
+  .catalog__wrapper{
+    overflow-x: auto;
   }
 }
 
