@@ -1045,7 +1045,7 @@ body {
     width: 100%;
   }
   .catalog__wrapper{
-    overflow-x: auto;
+    overflow-x: hidden;
   }
 }
 
